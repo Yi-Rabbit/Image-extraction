@@ -65,8 +65,8 @@ def drawContours(img):
 	for num1 in range(sp[0]-sp2,sp[0]):
 		for num2 in range(0,sp[1]):
 			cropImg[num1,num2] = 255
-	finalgray=cv2.cvtColor(im,cv2.COLOR_BGR2GRAY)
-	ret,finalImg = cv2.threshold(imgray,120,125,0)
+	finalgray=cv2.cvtColor(cropImg,cv2.COLOR_BGR2GRAY)
+	ret,finalImg = cv2.threshold(imgray,80,85,0)
 	#cv2.namedWindow('image', cv2.WINDOW_NORMAL)
 	#cv2.namedWindow('Image', cv2.WINDOW_NORMAL)
 	#cv2.imshow("image",im)
