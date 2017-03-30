@@ -67,4 +67,4 @@ def drawContours(img):
 	#cv2.imshow("Image", cropImg)
 	#cv2.waitKey(0)
 	#cv2.imwrite(../image/test_after.jpg,img)
-	return finalImg
+	return cropImg
